@@ -64,7 +64,7 @@ LEDのみの通知、通知削除にはBLE Serviceを使用せず、通知テキ
 - `ui/home/HomeFragment`: 通知するアプリ一覧を表示するGUI Fragment
 - `ui/dashboard/DashboardFragment`: Bluetooth接続・設定を表示するGUI Fragment
 
+## 参考
 
-
-
-
+- [BLEでM5Stackと通信](https://coskxlabsite.stars.ne.jp/html/android/BluetoothLE/bluetoothLE.html)
+- [Androidの通知をM5Core2に転送する](https://qiita.com/poruruba/items/59416a860242d20acc3b)
