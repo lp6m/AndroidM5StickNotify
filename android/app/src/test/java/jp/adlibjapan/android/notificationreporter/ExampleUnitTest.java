@@ -1,4 +1,4 @@
-package com.example.notificationreporter;
+package jp.adlibjapan.android.notificationreporter;
 
 import org.junit.Test;
 

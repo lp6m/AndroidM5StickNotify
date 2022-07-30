@@ -1,4 +1,4 @@
-package com.example.notificationreporter.ui.home;
+package jp.adlibjapan.android.notificationreporter.ui.home;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

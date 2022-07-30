@@ -1,4 +1,4 @@
-package com.example.notificationreporter.ui.dashboard;
+package jp.adlibjapan.android.notificationreporter.ui.dashboard;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -20,9 +20,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.example.notificationreporter.MainActivity;
-import com.example.notificationreporter.R;
-import com.example.notificationreporter.databinding.FragmentDashboardBinding;
+import jp.adlibjapan.android.notificationreporter.MainActivity;
+import jp.adlibjapan.android.notificationreporter.R;
+import jp.adlibjapan.android.notificationreporter.databinding.FragmentDashboardBinding;
 
 import java.util.Set;
 

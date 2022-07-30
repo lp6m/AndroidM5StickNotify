@@ -1,26 +1,17 @@
-package com.example.notificationreporter;
+package jp.adlibjapan.android.notificationreporter;
 
-import android.Manifest;
-import android.app.Activity;
-import android.app.AlertDialog;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothGatt;
 import android.bluetooth.BluetoothGattCallback;
 import android.bluetooth.BluetoothGattCharacteristic;
-import android.bluetooth.BluetoothGattDescriptor;
 import android.bluetooth.BluetoothGattService;
 import android.bluetooth.BluetoothManager;
 import android.bluetooth.BluetoothProfile;
 import android.content.Context;
-import android.content.pm.PackageManager;
 import android.os.Handler;
 import android.os.Looper;
-import android.util.Log;
 
-import androidx.core.content.ContextCompat;
-
-import java.util.Set;
 import java.util.UUID;
 
 public class BluetoothLEWork {

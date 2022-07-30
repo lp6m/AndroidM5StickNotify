@@ -1,4 +1,4 @@
-package com.example.notificationreporter;
+package jp.adlibjapan.android.notificationreporter;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,7 +26,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.example.notificationreporter.databinding.ActivityMainBinding;
+import jp.adlibjapan.android.notificationreporter.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity{
 

@@ -1,4 +1,4 @@
-package com.example.notificationreporter.ui.dashboard;
+package jp.adlibjapan.android.notificationreporter.ui.dashboard;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
@@ -9,7 +9,7 @@ public class DashboardViewModel extends ViewModel {
     private MutableLiveData<String> mText;
 
     public DashboardViewModel() {
-        mText = new MutableLiveData<>();
+        mText = new MutableLiveData<>(); 
         mText.setValue("This is dashboard fragment");
     }
 

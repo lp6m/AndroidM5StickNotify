@@ -1,4 +1,4 @@
-package com.example.notificationreporter.ui.home;
+package jp.adlibjapan.android.notificationreporter.ui.home;
 
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
@@ -15,9 +15,9 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.notificationreporter.NotificationDbHelper;
-import com.example.notificationreporter.R;
-import com.example.notificationreporter.databinding.FragmentHomeBinding;
+import jp.adlibjapan.android.notificationreporter.NotificationDbHelper;
+import jp.adlibjapan.android.notificationreporter.R;
+import jp.adlibjapan.android.notificationreporter.databinding.FragmentHomeBinding;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

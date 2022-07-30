@@ -1,4 +1,4 @@
-package com.example.notificationreporter;
+package jp.adlibjapan.android.notificationreporter;
 
 import android.content.ContentValues;
 import android.content.Context;
