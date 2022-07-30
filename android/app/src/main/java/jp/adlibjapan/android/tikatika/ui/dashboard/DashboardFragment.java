@@ -6,6 +6,7 @@ import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothManager;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -32,6 +33,7 @@ public class DashboardFragment extends Fragment {
     private String mDeviceName = "";
 
     private BluetoothAdapter mBluetoothAdapter;
+    private Button open_bluetooth_menu;
     private Button button_connect;
     private Button button_reconnect;
     private Switch led_only_switch;
@@ -48,6 +50,8 @@ public class DashboardFragment extends Fragment {
         View view = binding.getRoot();
 
         mContext = getContext();
+        open_bluetooth_menu = view.findViewById(R.id.open_bluetooth_menu);
+        open_bluetooth_menu.setOnClickListener(this::onClick);
         button_connect = view.findViewById(R.id.button_connect);
         button_connect.setOnClickListener(this::onClick);
         button_reconnect = view.findViewById(R.id.button_reconnect);
@@ -93,7 +97,12 @@ public class DashboardFragment extends Fragment {
         icon_send_switch.setChecked(icon_send);
     }
     public void onClick(View v) {
-        if (v == button_connect){
+        if (v == open_bluetooth_menu){
+            //Bluetooth設定を開く
+            Intent intentOpenBluetoothSettings = new Intent();
+            intentOpenBluetoothSettings.setAction(android.provider.Settings.ACTION_BLUETOOTH_SETTINGS);
+            startActivity(intentOpenBluetoothSettings);
+        } else if (v == button_connect){
             //デバイス選択画面を出し、選ばれたら接続
             selectAndConnect();
         } else if (v == button_reconnect){
