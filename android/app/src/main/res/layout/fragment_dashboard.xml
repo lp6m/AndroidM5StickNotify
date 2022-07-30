@@ -35,17 +35,24 @@
                 android:textSize="16sp" />
 
             <Button
+                android:id="@+id/open_bluetooth_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="250dp"
+                android:text="Bluetooth設定を開く" />
+
+            <Button
                 android:id="@+id/button_connect"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10sp"
+                android:width="250dp"
                 android:text="通知デバイス選択" />
 
             <Button
                 android:id="@+id/button_reconnect"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10sp"
+                android:width="250dp"
                 android:text="再接続" />
 
             <Switch
