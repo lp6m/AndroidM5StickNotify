@@ -25,6 +25,8 @@ import jp.adlibjapan.android.tikatika.MainActivity;
 import jp.adlibjapan.android.tikatika.R;
 import jp.adlibjapan.android.tikatika.databinding.FragmentDashboardBinding;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 public class DashboardFragment extends Fragment {
@@ -122,26 +124,31 @@ public class DashboardFragment extends Fragment {
     private void selectAndConnect(){
         Set<BluetoothDevice> pairedDevices = mBluetoothAdapter.getBondedDevices();
         int number = pairedDevices.size();
-        String[] deviceAddressList = new String[number];
-        String[] deviceNameList = new String[number];
+        List<String> deviceAddressList = new ArrayList<String>();
+        List<String> deviceNameList = new ArrayList<String>();
         if (pairedDevices.size() > 1) {
-            int i = 0;
             for (BluetoothDevice device : pairedDevices) {
-                deviceNameList[i] = device.getName();
-                deviceAddressList[i] = device.getAddress();
-                i++;
+                String device_name = device.getName();
+                String device_address = device.getAddress();
+                if (device_name.contains("M5")){
+                    deviceAddressList.add(device_address);
+                    deviceNameList.add(device_name);
+                }
             }
-            mDeviceName = deviceNameList[0];
-            mDeviceAddress = deviceAddressList[0];
+            mDeviceName = deviceNameList.get(0);
+            mDeviceAddress = deviceAddressList.get(0);
         } else {
             return;
         }
-
+        String[] deviceAddressArr = new String[deviceAddressList.size()];
+        String[] deviceNameArr = new String[deviceNameList.size()];
+        deviceAddressList.toArray(deviceAddressArr);
+        deviceNameList.toArray(deviceNameArr);
         new AlertDialog.Builder(mContext)
                 .setTitle("Select Bluetooth Device")
-                .setSingleChoiceItems(deviceNameList, 0, (dialog, item) -> {
-                    mDeviceName = deviceNameList[item];
-                    mDeviceAddress = deviceAddressList[item];
+                .setSingleChoiceItems(deviceNameArr, 0, (dialog, item) -> {
+                    mDeviceName = deviceNameArr[item];
+                    mDeviceAddress = deviceAddressArr[item];
                 })
                 .setPositiveButton("Select", (dialog, id) -> {
                     updateDeviceText();
