@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.example.notificationreporter",
+  "applicationId": "jp.adlibjapan.android.tikatika",
   "variantName": "release",
   "elements": [
     {
