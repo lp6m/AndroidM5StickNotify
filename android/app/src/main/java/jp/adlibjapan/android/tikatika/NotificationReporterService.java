@@ -142,7 +142,7 @@ public class NotificationReporterService extends NotificationListenerService {
 
             if( helper.hasPackageName(db, packageName)) {
                 if (posted) {
-                    if (tickerText == null) return;
+                    if (tickerText == null) tickerText = label;
                     String text_to_send = led_only ? "LED_ONLY_COMMAND" : label + ":" + tickerText.toString();
                     bleWork.sendText(text_to_send);
                     if (led_only == false && icon_send){

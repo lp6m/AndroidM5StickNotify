@@ -82,8 +82,8 @@ public class HomeFragment extends Fragment {
             this.dataList = new ArrayList<>();
 
             for (ApplicationInfo info : dataList) {
-                if ((info.flags & ApplicationInfo.FLAG_SYSTEM) == ApplicationInfo.FLAG_SYSTEM)
-                    continue;
+                /*if ((info.flags & ApplicationInfo.FLAG_SYSTEM) == ApplicationInfo.FLAG_SYSTEM)
+                    continue;*/
 
                 this.dataList.add(info);
             }
