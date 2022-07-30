@@ -1,4 +1,4 @@
-package jp.adlibjapan.android.notificationreporter;
+package jp.adlibjapan.android.tikatika;
 
 import org.junit.Test;
 

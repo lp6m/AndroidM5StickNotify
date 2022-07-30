@@ -1,4 +1,4 @@
-package jp.adlibjapan.android.notificationreporter;
+package jp.adlibjapan.android.tikatika;
 
 import android.app.Notification;
 import android.content.Context;
@@ -17,7 +17,7 @@ import android.service.notification.StatusBarNotification;
 import android.util.Log;
 import android.widget.Toast;
 
-import jp.adlibjapan.android.notificationreporter.ui.home.HomeFragment;
+import jp.adlibjapan.android.tikatika.ui.home.HomeFragment;
 
 public class NotificationReporterService extends NotificationListenerService {
     BluetoothLEWork bleWork;

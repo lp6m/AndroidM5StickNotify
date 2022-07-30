@@ -1,4 +1,4 @@
-package jp.adlibjapan.android.notificationreporter.ui.home;
+package jp.adlibjapan.android.tikatika.ui.home;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

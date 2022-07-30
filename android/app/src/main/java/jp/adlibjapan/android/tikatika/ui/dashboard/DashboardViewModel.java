@@ -1,4 +1,4 @@
-package jp.adlibjapan.android.notificationreporter.ui.dashboard;
+package jp.adlibjapan.android.tikatika.ui.dashboard;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

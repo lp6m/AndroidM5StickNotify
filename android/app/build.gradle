@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.0"
 
     defaultConfig {
-        applicationId "jp.adlibjapan.android.notificationreporter"
+        applicationId "jp.adlibjapan.android.tikatika"
         minSdkVersion 26
         targetSdkVersion 30
         versionCode 1

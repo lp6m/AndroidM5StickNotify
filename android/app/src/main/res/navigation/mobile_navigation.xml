@@ -7,13 +7,13 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="jp.adlibjapan.android.notificationreporter.ui.home.HomeFragment"
+        android:name="jp.adlibjapan.android.tikatika.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="jp.adlibjapan.android.notificationreporter.ui.dashboard.DashboardFragment"
+        android:name="jp.adlibjapan.android.tikatika.ui.dashboard.DashboardFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_dashboard" />
 

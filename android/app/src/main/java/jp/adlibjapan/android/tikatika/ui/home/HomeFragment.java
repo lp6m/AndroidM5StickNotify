@@ -1,4 +1,4 @@
-package jp.adlibjapan.android.notificationreporter.ui.home;
+package jp.adlibjapan.android.tikatika.ui.home;
 
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
@@ -10,14 +10,12 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import jp.adlibjapan.android.notificationreporter.NotificationDbHelper;
-import jp.adlibjapan.android.notificationreporter.R;
-import jp.adlibjapan.android.notificationreporter.databinding.FragmentHomeBinding;
+import jp.adlibjapan.android.tikatika.NotificationDbHelper;
+import jp.adlibjapan.android.tikatika.R;
+import jp.adlibjapan.android.tikatika.databinding.FragmentHomeBinding;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
