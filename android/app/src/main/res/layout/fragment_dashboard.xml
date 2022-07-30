@@ -39,28 +39,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10sp"
-                android:text="Select Device and Connect" />
+                android:text="通知デバイス選択" />
 
             <Button
                 android:id="@+id/button_reconnect"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10sp"
-                android:text="Reconnect" />
+                android:text="再接続" />
 
             <Switch
                 android:id="@+id/led_only_switch"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="LED only" />
+                android:text="LED通知のみ" />
 
             <Switch
                 android:id="@+id/icon_send_switch"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="send notification icon" />
+                android:text="通知アイコンを表示する" />
 
         </LinearLayout>
 

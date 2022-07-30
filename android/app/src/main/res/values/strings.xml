@@ -1,9 +1,8 @@
 <resources>
-    <string name="app_name">notificationreporter</string>
+    <string name="app_name">チカチカ</string>
     <string name="title_activity_main2">MainActivity</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_home">通知設定</string>
+    <string name="title_dashboard">Bluetooth設定</string>
     <string name="bluetooth_device">bluetooth_device</string>
     <string name="bluetooth_address">bluetooth_address</string>
     <string name="icon_send">icon_send</string>
